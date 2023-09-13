@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Authentication - provide credentials required
+Authorization - defines what authenticated user has access to within the app
 
-Things you may want to cover:
+- Devise gem - gives us authentication/authorization
+  $ bundle add devise
 
-* Ruby version
+JWT : JSON Web Token, needs secret key
 
-* System dependencies
+localStorage - JS property that allows us to store k-v pairs in browser
 
-* Configuration
+Step 1: add gems:
+gem 'devise-jwt'
+gem 'rack-cors'
 
-* Database creation
+Step 2: Create CORS file
 
-* Database initialization
+Step 3. Update devise.rb
 
-* How to run the test suite
+Step 4. Add controllers/routes for Devise
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- registration and sessions
